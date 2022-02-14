@@ -1,0 +1,116 @@
+<!--
+# Creator: Aryon Rabello
+# GitHub: https://github.com/arriaoedu123/
+# Creation date: 07/12/2021
+# Version: 1.0
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>CSS Generator</title>
+</head>
+<body>
+	<div class="switch-generator"> <!-- switch generator buttons -->
+		<button type="button" class="gradient-button">gradient</button>
+		<button type="button" class="box-shadow-button">box-shadow</button>
+	</div> 
+
+
+
+
+	<section class="gradient-generator"> <!-- gradient generator section -->
+		<div class="container">
+  			<div class="title">Gradient Generator CSS</div>
+  			<div class="box gradient-box">
+  				<div class="gradient-preview"></div>
+  				<span class="to-top-left"><i class="fas fa-arrow-up"></i></span>
+  				<span class="to-bottom-top"><i class="fas fa-arrow-up"></i></span>
+  				<span class="to-top-right"><i class="fas fa-arrow-up"></i></span>
+  				<span class="to-right"><i class="fas fa-arrow-right"></i></span>
+  				<span class="to-bottom-right"><i class="fas fa-arrow-right"></i></span>
+  				<span class="to-top-bottom"><i class="fas fa-arrow-down"></i></span>
+  				<span class="to-bottom-left"><i class="fas fa-arrow-down"></i></span>
+  				<span class="to-left"><i class="fas fa-arrow-left"></i></span>
+  			</div>
+  			<div class="setup gradient-setup">
+  				<div class="colors">
+  					<input type="color" class="color-a" value="#ffff80">
+  					<input type="color" class="color-b" value="#c1c1c1">
+  				</div>
+  				<div class="code">
+  					<button type="button" class="copy gradient-copy">Copy</button>
+					<p class="background">background<span>: </span><span class="background-code">linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); </span></p>
+  				</div>
+  			</div>
+		</div>
+	</section>
+
+
+
+
+
+	<section class="box-shadow-generator"> <!-- box shadow generator section -->
+		<div class="container">
+  			<div class="title">Box Shadow Generator CSS</div>
+  			<div class="box box-shadow-box">
+  				<div class="box-shadow-preview"></div>
+  			</div>
+  			<div class="setup box-shadow-setup">
+  				<div class="range"> <!-- border radius -->
+  					<span>Radius</span>
+					<div class="field">
+          				<div class="value left">0</div>
+						<input type="range" min="0" max="150" value="0" steps="1" id="horizontal">
+          				<div class="value right">50%</div>
+					</div>
+				</div>
+  				<div class="range"> <!-- horizontal offset -->
+  					<span>Horizontal offset</span>
+					<div class="field">
+          				<div class="value left">-50</div>
+						<input type="range" min="-50" max="50" value="0" steps="1" id="horizontal">
+          				<div class="value right">50</div>
+					</div>
+				</div>
+				<div class="range"> <!-- vertical offset -->
+  					<span>Vertical offset</span>
+					<div class="field">
+          				<div class="value left">-50</div>
+						<input type="range" min="-50" max="50" value="0" steps="1" id="vertical">
+          				<div class="value right">50</div>
+					</div>
+				</div>
+				<div class="range"> <!-- spread -->
+  					<span>Spread</span>
+					<div class="field">
+          				<div class="value left">-30</div>
+						<input type="range" min="-30" max="50" value="0" steps="1" id="spread">
+          				<div class="value right">50</div>
+					</div>
+				</div>
+				<div class="range"> <!-- blur -->
+  					<span>Blur</span>
+					<div class="field">
+          				<div class="value left">0</div>
+						<input type="range" min="0" max="50" value="0" steps="1" id="blur">
+          				<div class="value right">50</div>
+					</div>
+				</div>
+				<div class="code">
+					<button type="button" class="copy box-shadow-copy">Copy</button>
+					<p class="radius">border-radius<span>: </span><span class="radius-code">dasadsdas</span></p>
+					<p class="background">background<span>: </span><span class="background-code">dsadsadas</span></p>
+					<p class="shadow">box-shadow<span>: </span><span class="shadow-code">dasdsadsa</span></p>
+				</div>
+  			</div>
+		</div>
+	</section>
+	<a href="https://github.com/arriaoedu123/" target="_blank" class="github"><i class="fab fa-github"></i></a>
+	<script src="script.js"></script>
+</body>
+</html>

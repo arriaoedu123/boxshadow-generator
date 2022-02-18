@@ -1,2 +1,2 @@
-# css-generator
-Gradient and Box Shadow CSS Generator
+# boxshadow-generator
+Box Shadow CSS Generator

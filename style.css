@@ -13,13 +13,13 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Poppins', sans-serif;
-	color: #001f3f;
+	color: #1f1f1f;
 }
 
 body { /* giving body a background */
 	width: 100%;
 	height: 100vh;
-	background-color: #3f51b6;
+	background-color: #ffffff; 
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -57,118 +57,28 @@ body { /* giving body a background */
 	justify-content: center;
 }
 
-/* Gradient Generator CSS */
-
-.gradient-generator {
-	width: 80%;
-	height: 80%;
-	border-radius: 15px;
-	box-shadow: 7px 7px 14px #3b4aa2,
-             	-7px -7px 14px #6d8aff;
-}
-
-.gradient-preview {
-	width: 250px;
-	height: 250px;
-	display: block;
-	background-color: red;
-}
-
-.gradient-box {
-	position: relative;
-}
-
-.gradient-box span {
-	position: absolute;
-	font-size: 1.5rem;
-	cursor: pointer;
-}
-
-.to-top-left {
-	top: 12px;
-	left: 109px;
-	transform: rotate(-45deg);
-}
-
-.to-bottom-top {
-	top: 12px;
-	left: 50%;
-}
-
-.to-top-right {
-	top: 12px;
-	right: 109px;
-	transform: rotate(45deg);
-}
-
-.to-right {
-	top: 45%;
-	right: 109px;
-}
-
-.to-bottom-right {
-	bottom: 12px;
-	right: 109px;
-	transform: rotate(45deg);
-}
-
-.to-top-bottom {
-	bottom: 12px;
-	left: 50%;
-}
-
-.to-bottom-left {
-	bottom: 12px;
-	left: 109px;
-	transform: rotate(45deg);
-}
-
-.to-left {
-	top: 45%;
-	left: 109px;
-}
-
-.colors {
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	margin-bottom: 50px;
-}
-
-.colors input:nth-child(1) {
-	margin-right: 50px;
-}
-
-.colors input {
-	-webkit-appearance: none;
-	background-color: transparent;
-	border: none;
-	width: 80px;
-	height: 35px;
-	cursor: pointer;
-}
-
-.colors input::-webkit-color-swatch {
-	border-radius: 20px;
-	border: none;
-}
-
 /* Box Shadow Generator CSS */
 
 .box-shadow-generator {
-	display: none;
+	
 	width: 80%;
 	height: 80%;
+	background-color: #e4e4e4;
 	border-radius: 15px;
-	box-shadow: 7px 7px 14px #3b4aa2,
-             	-7px -7px 14px #6d8aff;
 }
 
 .box-shadow-preview {
+	--radius: 5px;
+	--horizontal: 2px;
+	--vertical: 2px;
+	--spread: 1px;
+	--blur: 2px;
 	width: 250px;
 	height: 250px;
 	display: block;
-	background-color: red;
+	background-color: #0275d8;
+	box-shadow: var(--horizontal) var(--vertical) var(--blur) var(--spread) rgba(0, 0, 0, 0.5);
+	border-radius: var(--radius);
 }
 
 /* Range Slider CSS */
@@ -192,7 +102,7 @@ body { /* giving body a background */
 .field .value{
   position: absolute;
   font-size: 18px;
-  color: #001f3f;
+  color: #1f1f1f;
   font-weight: 600;
 }
 
@@ -217,37 +127,33 @@ body { /* giving body a background */
   -webkit-appearance: none;
   width: 100%;
   height: 3px;
-  background-color: #ddd;
+  background-color: #4aabff;
   border-radius: 5px;
   outline: none;
   border: none;
   z-index: 2222;
 }
 
-.range input::-webkit-slider-thumb{
+.range input::-webkit-slider-thumb {
   -webkit-appearance: none;
   width: 20px;
   height: 20px;
-  background-color: red;
   border-radius: 50%;
-  background: #001f3f;
-  border: 1px solid #001f3f;
+  background-color: #0275d8;
   cursor: pointer;
 }
 
-.range input::-moz-range-thumb{
+.range input::-moz-range-thumb {
   -webkit-appearance: none;
   width: 20px;
   height: 20px;
-  background-color: red;
   border-radius: 50%;
-  background-color: #001f3f;
-  border: 1px solid #001f3f;
+  background-color: #0275d8;
   cursor: pointer;
 }
 
 .range input::-moz-range-progress{
-  background-color: #001f3f; //this progress background is only shown on Firefox
+  background-color: #001f3f;
 }
 
 /* Code preview CSS */

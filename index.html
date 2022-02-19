@@ -2,7 +2,8 @@
 # Creator: Aryon Rabello
 # GitHub: https://github.com/arriaoedu123/
 # Creation date: 07/12/2021
-# Version: 1.0
+# Update date: 19/02/2022
+# Version: 1.1
 -->
 
 <!DOCTYPE html>
@@ -26,7 +27,7 @@
   					<span>Radius</span>
 					<div class="field">
           				<div class="value left">0</div>
-						<input type="range" min="0" max="130" value="0" steps="1" id="radius">
+						<input type="range" min="0" max="125" value="5" steps="1" id="radius">
           				<div class="value right">50%</div>
 					</div>
 				</div>
@@ -34,7 +35,7 @@
   					<span>Horizontal offset</span>
 					<div class="field">
           				<div class="value left">-50</div>
-						<input type="range" min="-50" max="50" value="0" steps="1" id="horizontal">
+						<input type="range" min="-50" max="50" value="2" steps="1" id="horizontal">
           				<div class="value right">50</div>
 					</div>
 				</div>
@@ -42,7 +43,7 @@
   					<span>Vertical offset</span>
 					<div class="field">
           				<div class="value left">-50</div>
-						<input type="range" min="-50" max="50" value="0" steps="1" id="vertical">
+						<input type="range" min="-50" max="50" value="2" steps="1" id="vertical">
           				<div class="value right">50</div>
 					</div>
 				</div>
@@ -50,33 +51,33 @@
   					<span>Spread</span>
 					<div class="field">
           				<div class="value left">-30</div>
-						<input type="range" min="-30" max="50" value="0" steps="1" id="spread">
-          				<div class="value right">50</div>
+						<input type="range" min="-30" max="25" value="2" steps="1" id="spread">
+          				<div class="value right">25</div>
 					</div>
 				</div>
 				<div class="range"> <!-- blur -->
   					<span>Blur</span>
 					<div class="field">
           				<div class="value left">0</div>
-						<input type="range" min="0" max="50" value="0" steps="1" id="blur">
-          				<div class="value right">50</div>
+						<input type="range" min="0" max="25" value="1" steps="1" id="blur">
+          				<div class="value right">25</div>
 					</div>
 				</div>
 				<div class="code">
 					<button type="button" class="copy box-shadow-copy">Copy</button>
-					<p class="radius select">border-radius<span>: </span><span class="radius-code">5px</span></p>
+					<p class="radius select">border-radius<span>: </span><span class="radius-code">5px;</span></p>
 					<p class="shadow select">box-shadow<span>: </span>
 						<span class="horizontal-code">2px </span>
 						<span class="vertical-code">2px </span>
 						<span class="spread-code">2px </span>
 						<span class="blur-code">1px </span>
-						<span>rgba(0, 0, 0, 0.5)</span>
+						<span class="color-code">rgba(0, 0, 0, 0.5);</span>
 					</p>
 				</div>
   			</div>
 		</div>
 	</section>
-	<a href="https://github.com/arriaoedu123/" target="_blank" class="github"><i class="fab fa-github"></i></a>
+	<p class="responsive-warning">Responsive not available! Try it on desktop</p>
 	<script src="script.js"></script>
 </body>
 </html>

@@ -2,7 +2,8 @@
 # Creator: Aryon Rabello
 # GitHub: https://github.com/arriaoedu123/
 # Creation date: 07/12/2021
-# Version: 1.0
+# Update date: 19/02/2022
+# Version: 1.1
 */
 
 const boxShadowPreview = document.querySelector('.box-shadow-preview')
@@ -11,20 +12,22 @@ const horizontalInput = document.querySelector('#horizontal')
 const verticalInput = document.querySelector('#vertical')
 const spreadInput = document.querySelector('#spread')
 const blurInput = document.querySelector('#blur')
-const copyBtn = document.querySelector('.copy')
 
 const radiusCode = document.querySelector('.radius-code')
 const horizontalCode = document.querySelector('.horizontal-code')
 const verticalCode = document.querySelector('.vertical-code')
 const spreadCode = document.querySelector('.spread-code')
 const blurCode = document.querySelector('.blur-code')
+const colorCode = document.querySelector('.color-code')
+
+const copyBtn = document.querySelector('.copy')
 
 radiusInput.addEventListener('input', () => {
 	let radiusInputValue = radiusInput.value
 	boxShadowPreview.style.setProperty("--radius", `${radiusInputValue}px`)
-	radiusCode.innerHTML = `${radiusInputValue}px`
+	radiusCode.innerHTML = `${radiusInputValue}px;`
 
-	if (radiusInputValue == 130) { radiusCode.innerHTML = "50%" }
+	if (radiusInputValue == 125) { radiusCode.innerHTML = "50%;" }
 })
 
 horizontalInput.addEventListener('input', () => {
@@ -49,4 +52,14 @@ blurInput.addEventListener('input', () => {
 	let blurInputValue = blurInput.value
 	boxShadowPreview.style.setProperty("--blur", `${blurInputValue}px`)
 	blurCode.innerHTML = `${blurInputValue}px `
+})
+
+copyBtn.addEventListener('click', () => {
+    let textArea = document.createElement("textarea");
+    textArea.value = `border-radius: ${radiusCode.innerHTML}
+box-shadow: ${horizontalCode.innerHTML}${verticalCode.innerHTML}${spreadCode.innerHTML}${blurCode.innerHTML}${colorCode.innerHTML}`;
+    document.body.appendChild(textArea);
+    textArea.select();
+    document.execCommand("Copy");
+    textArea.remove();
 })
